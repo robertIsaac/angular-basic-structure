@@ -9,6 +9,8 @@ import { HeaderComponent } from './core/components/header/header.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AuthInterceptor } from './core/interceptors/auth.interceptor';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { AuthInterceptor } from './core/interceptors/auth.interceptor';
     BrowserAnimationsModule,
     SharedModule,
     HttpClientModule,
+    BsDropdownModule.forRoot(),
+    CollapseModule.forRoot(),
   ],
   providers: [
     {
